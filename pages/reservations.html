@@ -7,37 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations</title>
     <link rel="stylesheet" href="../style.css" />
+    <script src="../script.js"></script>
 </head>
 
 <body>
-    Reservations Info:
-    <form id="reservations">
-        <label for="1st_name">1st name</label>
-        <input type="text" id="1st_name" name="1st_name"><br>
-        <label for="last_name">last name</label>
-        <input type="text" id="last_name" name="last_name"><br>
-        <input type="email" id="email">email</lable><br>
-        <label for="lang">Number of Guests</label>
-        <select name="#ofGuests" id="#ofGuests">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-        </select><br>
-        <input type="checkbox" id="bParty" name="bParty" value="Birthday">
-        <label for="bParty"> I am here for a birthday party.</label><br>
-        <input type="checkbox" id="wedding" name="wedding" value="wedding">
-        <label for="wedding"> I am here for a wedding</label><br>
-        <input type="checkbox" id="other" name="other" value="other">
-        <label for="other"> I here for another reason</label><br>
-        <label for="date">date for reservation:</label>
-        <input type="date" id="date" name="reserveation date"><br>
-        <input type="submit" value="Submit" />
-    </form>
+    <div id="reservationForm">
+        Reservations Info:
+        <form id="reservations">
+            <label for="firstName">first name</label>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">last name</label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <input type="email" id="email">email</label><br>
+            <label for="lang">Number of Guests</label>
+            <select name="numOfGuests" id="numOfGuests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select><br>
+            <input type="checkbox" id="bParty" name="bParty" value="Birthday">
+            <label for="bParty"> I am here for a birthday party.</label><br>
+            <input type="checkbox" id="wedding" name="wedding" value="wedding">
+            <label for="wedding"> I am here for a wedding</label><br>
+            <input type="checkbox" id="other" name="other" value="other">
+            <label for="other"> I here for another reason</label><br>
+            <label for="date">date for reservation:</label>
+            <input type="date" id="date" name="reserveation date"><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <div id="reservationInfo"></div>
 </body>
 
 </html>
